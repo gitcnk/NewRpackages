@@ -1,5 +1,29 @@
 [
   {
+    "path": "posts/2024-03-23-ggextra/",
+    "title": "ggExtra",
+    "description": "An Esier way to add multiple ggplots",
+    "author": [],
+    "date": "2024-03-23",
+    "categories": [],
+    "contents": "\n\n\nlibrary(ggplot2)\nlibrary(ggExtra)\n\n# classic plot :\np <- ggplot(mtcars, aes(x=wt, y=mpg, color=cyl)) +\n     geom_point() +\n     theme(legend.position=\"none\")\n\n# marginal boxplot\nggMarginal(p, type = \"boxplot\")\n\n\n\n\n\n\n",
+    "preview": "posts/2024-03-23-ggextra/ggextra_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2024-03-23T16:54:17-04:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2024-03-23-march-2024/",
+    "title": "GGally",
+    "description": {},
+    "author": [],
+    "date": "2024-03-23",
+    "categories": [],
+    "contents": "\n\n\n\n\n\n\n",
+    "preview": "posts/2024-03-23-march-2024/ggally_files/figure-html5/unnamed-chunk-1-1.png",
+    "last_modified": "2024-03-23T16:59:04-04:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to Good R Packages",
     "description": "Welcome to our new blog, Good R Packages. We hope you enjoy \nreading what we have to say!",
@@ -15,29 +39,5 @@
     "preview": {},
     "last_modified": "2024-03-23T16:12:22-04:00",
     "input_file": {}
-  },
-  {
-    "path": "posts/2024-03-23-march-2024/",
-    "title": "GGally",
-    "description": {},
-    "author": [],
-    "date": "2024-03-23",
-    "categories": [],
-    "contents": "\n\n\n\n\n\n\n",
-    "preview": "posts/2024-03-23-march-2024/ggally_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2024-03-23T16:59:02-04:00",
-    "input_file": "ggally.knit.md"
-  },
-  {
-    "path": "posts/2024-03-23-ggextra/",
-    "title": "ggExtra",
-    "description": "An Esier way to add multiple ggplots",
-    "author": [],
-    "date": "2024-03-23",
-    "categories": [],
-    "contents": "\n\n\nlibrary(ggplot2)\nlibrary(ggExtra)\n\n# classic plot :\np <- ggplot(mtcars, aes(x=wt, y=mpg, color=cyl)) +\n     geom_point() +\n     theme(legend.position=\"none\")\n\n# marginal boxplot\nggMarginal(p, type = \"boxplot\")\n\n\n\n\n\n\n",
-    "preview": "posts/2024-03-23-ggextra/ggextra_files/figure-html5/unnamed-chunk-1-1.png",
-    "last_modified": "2024-03-23T16:54:15-04:00",
-    "input_file": "ggextra.knit.md"
   }
 ]

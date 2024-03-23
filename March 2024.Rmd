@@ -1,0 +1,21 @@
+---
+title: "March 2024"
+
+author:
+
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+```{r}
+library(GGally)
+ggpairs(iris, columns = c(1,2,3))
+ggpairs(iris, columns = c(1,2,3), ggplot2::aes(col = Species))
+
+ggcorr(iris)
+
+```
+

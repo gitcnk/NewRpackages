@@ -1,0 +1,21 @@
+---
+title: "Welcome to Good R Packages"
+description: |
+   Good R Packages. 
+author:
+  - name: CK 
+
+date: 03-23-2024
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+
+```
+
+
+

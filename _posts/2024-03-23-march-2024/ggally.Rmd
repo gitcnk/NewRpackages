@@ -1,16 +1,18 @@
 ---
-title: "March 2024"
+title: "GGally"
 
-author:
-
-date: "`r Sys.Date()`"
-output: distill::distill_article
+date: 2024-03-23
+output:
+  distill::distill_article:
+    self_contained: false
 ---
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-```{r}
+
+```{r message=FALSE, warning=FALSE}
 library(GGally)
 ggpairs(iris, columns = c(1,2,3))
 ggpairs(iris, columns = c(1,2,3), ggplot2::aes(col = Species))

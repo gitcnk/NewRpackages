@@ -1,0 +1,27 @@
+---
+title: "ggExtra"
+description: |
+  An Esier way to add multiple ggplots
+
+date: 2024-03-23
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+
+```{r message=FALSE, warning=FALSE}
+library(ggplot2)
+library(ggExtra)
+
+# classic plot :
+p <- ggplot(mtcars, aes(x=wt, y=mpg, color=cyl)) +
+     geom_point() +
+     theme(legend.position="none")
+
+# marginal boxplot
+ggMarginal(p, type = "boxplot")
+
+```
+
